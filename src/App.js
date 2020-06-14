@@ -11,8 +11,7 @@ class App extends React.Component {
           type: "line",
           label: "BTC-USD PRICE",
           backgroundColor: "rgba(0,153,255,0.6)",
-          borderColor: 'rgba(0,153,255,0.2)',
-          borderWidth: "2",
+          
           lineTension: 0,
           data: []
         }
@@ -74,7 +73,7 @@ class App extends React.Component {
   render(){
     return(
       
-      <div>BTC-USD Real Time Data
+      <div className='graphData'>BTC-USD Price Real Time Data
         <Chart
           data={this.state.lineChartData}
           options={this.state.lineChartOptions}
